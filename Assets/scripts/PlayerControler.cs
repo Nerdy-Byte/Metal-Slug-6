@@ -6,6 +6,7 @@ public class PlayerControler : MonoBehaviour
 {
     public Rigidbody2D theRB;
     public Animator anim;
+    public Animator crouchAnim;
     public float moveSpeed;
     public float jumpForce;
     private bool onGround;
@@ -13,6 +14,9 @@ public class PlayerControler : MonoBehaviour
     public Transform groundCheck;
     public bullet bullet;
     public Transform firePoint;
+    public GameObject standing, crouch;
+    public float waitToCrouch;
+    private float crouch_counter;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,8 +38,37 @@ public class PlayerControler : MonoBehaviour
         {
             Instantiate(bullet, firePoint.position, firePoint.rotation).bulletDirection = new Vector2(transform.localScale.x, 0);
             anim.SetTrigger("fired");
+            crouchAnim.SetTrigger("fired");
         }
+
+        if(!crouch.activeSelf){
+            if(Input.GetAxisRaw("Vertical") < -0.9){
+                crouch_counter -= Time.deltaTime;
+                if(crouch_counter < 0){
+                    crouch.SetActive(true);
+                    // anim.SetTrigger("crouch");
+                    standing.SetActive(false);
+                }
+            }
+            else{
+                crouch_counter = waitToCrouch;
+            }
+        }
+        else{
+            if(Input.GetAxisRaw("Vertical") > 0.9){
+                crouch_counter -= Time.deltaTime;
+                if(crouch_counter < 0){
+                    crouch.SetActive(false);
+                    standing.SetActive(true);
+                }
+            }
+            else{
+                crouch_counter = waitToCrouch;
+            }
+        }
+
         anim.SetBool("onGround", onGround);
         anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
+        crouchAnim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
     }
 }
