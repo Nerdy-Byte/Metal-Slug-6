@@ -11,6 +11,8 @@ public class PlayerControler : MonoBehaviour
     private bool onGround;
     public LayerMask whatIsGround;
     public Transform groundCheck;
+    public bullet bullet;
+    public Transform firePoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,11 @@ public class PlayerControler : MonoBehaviour
         if (Input.GetButtonDown("Jump") && onGround)
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
+        }
+        if (Input.GetButtonDown("Fire1") && onGround)
+        {
+            Instantiate(bullet, firePoint.position, firePoint.rotation).bulletDirection = new Vector2(transform.localScale.x, 0);
+            anim.SetTrigger("fired");
         }
         anim.SetBool("onGround", onGround);
         anim.SetFloat("speed", Mathf.Abs(theRB.velocity.x));
