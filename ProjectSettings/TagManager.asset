@@ -8,12 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - No collisions
   - Water
   - UI
-  - 
-  - 
-  - 
+  - ground
+  - shot
+  - player
   - 
   - 
   - 
