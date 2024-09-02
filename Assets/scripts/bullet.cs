@@ -8,6 +8,7 @@ public class bullet : MonoBehaviour
     public Rigidbody2D theRb;
     public float bulletDamage;
     public Vector2 bulletDirection;
+    public int damageAmount=1; 
     public GameObject bulletEffect;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,9 @@ public class bullet : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag=="Enemy"){
+            other.GetComponent<EnemyHealthControler>().DamageEnemy(damageAmount);
+        }
         if(bulletEffect!=null)
             Instantiate(bulletEffect, transform.position, Quaternion.identity);
         
