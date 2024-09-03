@@ -26,6 +26,10 @@ public class bullet : MonoBehaviour
         if(other.tag=="Enemy"){
             other.GetComponent<EnemyHealthControler>().DamageEnemy(damageAmount);
         }
+
+        if(other.tag=="Boss"){
+            BossHealthControler.instance.DamageBoss(damageAmount);
+        }
         if(bulletEffect!=null)
             Instantiate(bulletEffect, transform.position, Quaternion.identity);
         
