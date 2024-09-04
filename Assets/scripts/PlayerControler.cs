@@ -34,7 +34,7 @@ public class PlayerControler : MonoBehaviour
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
         }
-        if (Input.GetButtonDown("Fire1") && onGround)
+        if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(bullet, firePoint.position, firePoint.rotation).bulletDirection = new Vector2(transform.localScale.x, 0);
             anim.SetTrigger("fired");
