@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mainmenu.unity
     guid: 94aa9b93cfaa69146b5f171491c14769
   - enabled: 1
-    path: Assets/Scenes/test-lvl2.unity
+    path: Assets/Scenes/lvl1-jungle.unity
+    guid: 1ad8d07a4915d2146a3a72a71dcd6ad2
+  - enabled: 1
+    path: Assets/Scenes/lvl2-fortress.unity
     guid: f8fc749433b6d79448b2f9bdcf9056cd
   m_configObjects: {}
