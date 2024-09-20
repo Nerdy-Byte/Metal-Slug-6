@@ -30,6 +30,9 @@ public class bullet : MonoBehaviour
         if(other.tag=="Boss"){
             BossHealthControler.instance.DamageBoss(damageAmount);
         }
+        if(other.tag=="Boss2"){
+            BossHealthControler2.instance.DamageBoss(damageAmount);
+        }
         if(bulletEffect!=null)
             Instantiate(bulletEffect, transform.position, Quaternion.identity);
         
