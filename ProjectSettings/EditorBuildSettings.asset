@@ -15,6 +15,21 @@ EditorBuildSettings:
     path: Assets/Scenes/lvl1-fortress.unity
     guid: f8fc749433b6d79448b2f9bdcf9056cd
   - enabled: 1
+    path: Assets/Scenes/lvl1-complete.unity
+    guid: e6e277d7cbe8fcc4c9ca4454b03c2d85
+  - enabled: 1
     path: Assets/Scenes/lvl2-jungle.unity
     guid: 1ad8d07a4915d2146a3a72a71dcd6ad2
+  - enabled: 1
+    path: Assets/Scenes/lvl2-complete.unity
+    guid: 577865a82b9842e4481f669149d111bd
+  - enabled: 1
+    path: Assets/Scenes/lvl3-alien.unity
+    guid: 44ca8496b87e54845b811b95241add0e
+  - enabled: 1
+    path: Assets/Scenes/lvl3-complete.unity
+    guid: 6665dfe9f63182641aafe7f322c43925
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 6a90c9ef901ca2846ab9e9b76b099a75
   m_configObjects: {}

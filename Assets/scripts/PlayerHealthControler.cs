@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class PlayerHealthControler : MonoBehaviour
 {
     public static PlayerHealthControler instance;
 
-    private void Awake(){
+    private void Awake()
+    {
         instance = this;
     }
 
@@ -16,8 +18,9 @@ public class PlayerHealthControler : MonoBehaviour
     private float invincibilityCounter;
     public float flashLength;
     private float flashCounter;
-    public int maxHealth=10;
+    public int maxHealth = 10;
     public SpriteRenderer[] playerSprites;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,43 +31,53 @@ public class PlayerHealthControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(invincibilityCounter > 0){
+        if (invincibilityCounter > 0)
+        {
             invincibilityCounter -= Time.deltaTime;
         }
         flashCounter -= Time.deltaTime;
-        if(flashCounter <= 0){
-            foreach(SpriteRenderer sr in playerSprites){
+        if (flashCounter <= 0)
+        {
+            foreach (SpriteRenderer sr in playerSprites)
+            {
                 sr.enabled = !sr.enabled;
             }
             flashCounter = flashLength;
         }
-        if(invincibilityCounter <= 0){
-            foreach(SpriteRenderer sr in playerSprites){
+        if (invincibilityCounter <= 0)
+        {
+            foreach (SpriteRenderer sr in playerSprites)
+            {
                 sr.enabled = true;
             }
             flashCounter = 0;
         }
     }
 
-    public void DamagePlayer(int damageAmount) 
+    public void DamagePlayer(int damageAmount)
     {
-        if(invincibilityCounter <= 0){
+        if (invincibilityCounter <= 0)
+        {
             currentHealth -= damageAmount;
-            if(currentHealth <= 0){
+            if (currentHealth <= 0)
+            {
                 currentHealth = 0;
                 gameObject.SetActive(false);
+                SceneManager.LoadScene("Gameover"); // Load the "Gameover" scene
             }
-            else{
+            else
+            {
                 invincibilityCounter = invincibilityLength;
             }
             UI_Controler.instance.UpdateHealth(currentHealth, maxHealth);
         }
     }
 
-    public void HealPlayer(int healAmount) 
+    public void HealPlayer(int healAmount)
     {
         currentHealth += healAmount;
-        if(currentHealth > maxHealth){
+        if (currentHealth > maxHealth)
+        {
             currentHealth = maxHealth;
         }
         UI_Controler.instance.UpdateHealth(currentHealth, maxHealth);
