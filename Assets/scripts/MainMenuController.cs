@@ -5,6 +5,6 @@ public class MainMenuController : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("lvl1-jungle");
+        SceneManager.LoadScene("lvl1-fortress");
     }
 }

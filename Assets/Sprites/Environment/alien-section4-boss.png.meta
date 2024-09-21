@@ -1,0 +1,809 @@
+fileFormatVersion: 2
+guid: 15900b790118eab468a37f737698d41d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alien-section4-boss_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 1539
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7630eef3e7790324a90f93373637bf39
+      internalID: -889930564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 100
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb5c383732c9d94288cf8373ce466af
+      internalID: -1106650579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 712
+        width: 160
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c320ae7bb96ec943b60d815c7c744af
+      internalID: -385929248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_3
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 141
+        width: 1462
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcab2db185ecd1f41b9dcd4452280c09
+      internalID: 2044143737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 1539
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27dd37e16837b734a98e4c77ecbdc1d1
+      internalID: 696161344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_5
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 54
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c05f67f65c6c44583cf7528bf3da26
+      internalID: -1844170374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_6
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 0
+        width: 292
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32c5ac47f467e248aab540a2cfdc681
+      internalID: -1606451986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_7
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 0
+        width: 320
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc65b63a820c04d49b8a0cf7c9218684
+      internalID: 780260614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_8
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 52
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4fc46c61a0b8b48829768bf2487a71
+      internalID: 1987774736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_9
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 51
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67266c596f002ef49a09761ab39db325
+      internalID: 177503862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_10
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 24
+        width: 272
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bea19d30ff833943b14705dcb796e99
+      internalID: 314117675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_11
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 0
+        width: 237
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2a677f6bc06024a9be05d7a0ac09a4
+      internalID: 25210413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_12
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0
+        width: 233
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af2008fbcca16784db6285b3c33884a7
+      internalID: -1518032733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_13
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 230
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb55cca6e8a16c43a8507bd13266100
+      internalID: 873159654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_14
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 0
+        width: 231
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734b4fc3074795641b3666dabb50d366
+      internalID: 668106701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_15
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 11
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11820717a6135a4439d614a8a75a794b
+      internalID: -1303093630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_16
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 9
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817dc9df6611cf54280fd6149cb3da0b
+      internalID: -690764611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 9
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c9d51fd1d99f944bd792b61fb25894
+      internalID: 2006779670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_18
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 10
+        width: 29
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6c585d23420844ea1b25cfe4ff30c9
+      internalID: -749966914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_19
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 10
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93b6bba8c759a44082a8ec646f674ac
+      internalID: -1502384565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_20
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 9
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0bc496b69e92142aa697c46a33e5ce
+      internalID: -1418048082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_21
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 9
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5fea5cb3b046540bf2d6eb437f9398
+      internalID: 543582328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_22
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 51
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205c4ebb4be923640abd6b11dd183edc
+      internalID: -192615645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_23
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 116
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3337e02a4aff2444294d060ab3d6e9cb
+      internalID: -592047878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_24
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 110
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446c033691fd4ac419e9e39d0d8c9be3
+      internalID: -1074821528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_25
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 0
+        width: 108
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d501b441fcfdc4db68e3585efbc87e
+      internalID: -2006033183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_26
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 0
+        width: 111
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8cd32b1f84c1140b10b8d9993a298b
+      internalID: 1538075950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_27
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 0
+        width: 108
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ec228f0dabf6147a87dcf39272661d
+      internalID: 1419203462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_28
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 0
+        width: 110
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efedbeff8593a1f44b71b70a21bf75fb
+      internalID: -1130673672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_29
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 0
+        width: 108
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68948afeaa492c3489ddead52b62a57d
+      internalID: -1304186450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alien-section4-boss_30
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 0
+        width: 27
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a71a66869b9eb243a67580de649bce4
+      internalID: -73408495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      alien-section4-boss_0: -889930564
+      alien-section4-boss_1: -1106650579
+      alien-section4-boss_10: 314117675
+      alien-section4-boss_11: 25210413
+      alien-section4-boss_12: -1518032733
+      alien-section4-boss_13: 873159654
+      alien-section4-boss_14: 668106701
+      alien-section4-boss_15: -1303093630
+      alien-section4-boss_16: -690764611
+      alien-section4-boss_17: 2006779670
+      alien-section4-boss_18: -749966914
+      alien-section4-boss_19: -1502384565
+      alien-section4-boss_2: -385929248
+      alien-section4-boss_20: -1418048082
+      alien-section4-boss_21: 543582328
+      alien-section4-boss_22: -192615645
+      alien-section4-boss_23: -592047878
+      alien-section4-boss_24: -1074821528
+      alien-section4-boss_25: -2006033183
+      alien-section4-boss_26: 1538075950
+      alien-section4-boss_27: 1419203462
+      alien-section4-boss_28: -1130673672
+      alien-section4-boss_29: -1304186450
+      alien-section4-boss_3: 2044143737
+      alien-section4-boss_30: -73408495
+      alien-section4-boss_4: 696161344
+      alien-section4-boss_5: -1844170374
+      alien-section4-boss_6: -1606451986
+      alien-section4-boss_7: 780260614
+      alien-section4-boss_8: 1987774736
+      alien-section4-boss_9: 177503862
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
