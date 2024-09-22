@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthControler : MonoBehaviour
 {
@@ -20,6 +20,11 @@ public class PlayerHealthControler : MonoBehaviour
     private float flashCounter;
     public int maxHealth = 10;
     public SpriteRenderer[] playerSprites;
+
+    // Audio components
+    public AudioSource audioSource;
+    public AudioClip damageSound;
+    public AudioClip healthPickupSound; 
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +64,13 @@ public class PlayerHealthControler : MonoBehaviour
         if (invincibilityCounter <= 0)
         {
             currentHealth -= damageAmount;
+
+            // Play damage sound
+            if (audioSource != null && damageSound != null)
+            {
+                audioSource.PlayOneShot(damageSound);
+            }
+
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
@@ -80,6 +92,13 @@ public class PlayerHealthControler : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+
+        // Play health pickup sound
+        if (audioSource != null && healthPickupSound != null)
+        {
+            audioSource.PlayOneShot(healthPickupSound);
+        }
+
         UI_Controler.instance.UpdateHealth(currentHealth, maxHealth);
     }
 }
