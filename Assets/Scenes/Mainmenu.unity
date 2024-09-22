@@ -400,7 +400,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
-  m_AdditionalShaderChannelsFlag: 7
+  m_AdditionalShaderChannelsFlag: 31
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 1159899107}
   - component: {fileID: 1159899106}
   - component: {fileID: 1159899105}
+  - component: {fileID: 1159899108}
   m_Layer: 5
   m_Name: Exit-Button
   m_TagString: Untagged
@@ -547,6 +548,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159899103}
   m_CullTransparentMesh: 1
+--- !u!114 &1159899108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159899103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a956087ab6f314e41945208f74f6118f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1261677003
 GameObject:
   m_ObjectHideFlags: 0
