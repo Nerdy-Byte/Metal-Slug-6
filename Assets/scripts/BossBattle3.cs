@@ -67,6 +67,7 @@ public class BossBattle3 : MonoBehaviour
         anim.SetTrigger("death");
         gameObject.SetActive(false);
         theCam.enabled = true;
+        ScoreControler.AddPoints(15);
     }
 
     // void FacePlayer()

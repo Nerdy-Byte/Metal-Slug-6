@@ -14,6 +14,7 @@ public class EnemyHealthControler : MonoBehaviour
         if(totalHealth <= 0){
             anim.SetTrigger("death");
             Destroy(gameObject, .6f);
+            ScoreControler.AddPoints(5);
         }
     }
 }
