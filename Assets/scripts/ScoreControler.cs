@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement; 
 
 public class ScoreControler : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class ScoreControler : MonoBehaviour
         if (scoreText == null)
         {
             scoreText = GetComponent<TextMeshProUGUI>();
+        }
+
+        // Check if the current scene is "lvl1-fortress"
+        if (SceneManager.GetActiveScene().name == "lvl1-fortress")
+        {
+            scoreValue = 0; // Reset score to zero
         }
     }
 
