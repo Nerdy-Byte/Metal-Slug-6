@@ -36,6 +36,7 @@ public class BossBattle1 : MonoBehaviour
     public void EndBattle(){
         gameObject.SetActive(false);
         theCam.enabled = true;
+        ScoreControler.AddPoints(15);
     }
 }
 

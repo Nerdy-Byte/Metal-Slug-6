@@ -69,5 +69,6 @@ public class EnemyFlyer : MonoBehaviour
         
         // Destroy the enemy object after the animation plays out
         Destroy(gameObject);
+        ScoreControler.AddPoints(5);
     }
 }
