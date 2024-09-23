@@ -10,10 +10,8 @@ Metal Slug 6 is a thrilling platform shooter developed using Unity, continuing t
 - [Installation](#installation)
 - [Gameplay Mechanics](#gameplay-mechanics)
 - [Controls](#controls)
-- [Character Abilities](#character-abilities)
 - [Levels and Environments](#levels-and-environments)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
