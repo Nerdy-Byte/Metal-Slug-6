@@ -45,7 +45,7 @@ public class FireGhoul : MonoBehaviour
             }
             else if (direction.x < 0) // Player is to the left
             {
-            //    theRB.velocity = new Vector2(movSpeed, theRB.velocity.y);
+            // theRB.velocity = new Vector2(movSpeed, theRB.velocity.y);
                 transform.localScale = new Vector3(7, 7, 1);
             }
         }
@@ -58,13 +58,9 @@ public class FireGhoul : MonoBehaviour
 private void OnTriggerEnter2D(Collider2D other) {
     if(other.tag=="Player"){
         PlayerHealthControler.instance.DamagePlayer(1);
+        anim.SetTrigger("death");
         Destroy(gameObject);
     } 
-    else if(other.tag=="Ground"){
-        //wait untill player chnages direction
-        Destroy(gameObject);
-    }
-
 }
 
 }
