@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +11,6 @@ public class PlayerHealthControler : MonoBehaviour
         instance = this;
     }
 
-    // [HideInInspector]
     public int currentHealth;
     public float invincibilityLength;
     private float invincibilityCounter;
@@ -21,19 +19,21 @@ public class PlayerHealthControler : MonoBehaviour
     public int maxHealth = 10;
     public SpriteRenderer[] playerSprites;
 
+    // Animator reference
+    private Animator animator;
+
     // Audio components
     public AudioSource audioSource;
     public AudioClip damageSound;
-    public AudioClip healthPickupSound; 
+    public AudioClip healthPickupSound;
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         UI_Controler.instance.UpdateHealth(currentHealth, maxHealth);
+        animator = GetComponentInChildren<Animator>(); // Assuming the Animator is on the child object
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (invincibilityCounter > 0)
@@ -74,8 +74,7 @@ public class PlayerHealthControler : MonoBehaviour
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                gameObject.SetActive(false);
-                SceneManager.LoadScene("Gameover"); // Load the "Gameover" scene
+                StartCoroutine(HandleDeath()); // Start the death handling coroutine
             }
             else
             {
@@ -83,6 +82,18 @@ public class PlayerHealthControler : MonoBehaviour
             }
             UI_Controler.instance.UpdateHealth(currentHealth, maxHealth);
         }
+    }
+
+    private IEnumerator HandleDeath()
+    {
+        // Trigger death animation
+        animator.SetTrigger("Die"); // Trigger death animation
+
+        // Wait for the animation to finish
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length + 3f);
+
+        // Load the game over scene
+        SceneManager.LoadScene("Gameover");
     }
 
     public void HealPlayer(int healAmount)
