@@ -50,12 +50,12 @@ public class IntroManager : MonoBehaviour
         while (elapsed < fadeDuration)
         {
             elapsed += Time.deltaTime; // Increment elapsed time.
-            // Interpolate alpha value based on elapsed time and fade duration.
+            // Change transparency level based on elapsed time and fade duration.
             canvasGroup.alpha = Mathf.Lerp(startAlpha, endAlpha, elapsed / fadeDuration);
             yield return null; // Wait until the next frame.
         }
 
-        // Ensure the final alpha value is set correctly.
+        // Check the final alpha value is set correctly.
         canvasGroup.alpha = endAlpha; 
     }
 
