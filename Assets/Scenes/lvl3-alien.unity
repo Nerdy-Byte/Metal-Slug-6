@@ -20025,6 +20025,10 @@ PrefabInstance:
       propertyPath: healthPickupSound
       value: 
       objectReference: {fileID: 8300000, guid: 42f015e1d3a51b44e980b8755d02d0dc, type: 3}
+    - target: {fileID: 7347961655098254806, guid: 4f394cef861034b569c9aedc62dacfe5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7903790283953018053, guid: 4f394cef861034b569c9aedc62dacfe5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.45
